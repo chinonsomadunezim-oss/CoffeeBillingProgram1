@@ -65,8 +65,12 @@ namespace ConsoleApplication
 
 				if (isReseller)
 				{
-					discount = totalCost * 0.20;
+					discount = totalCost * 0.25; //Increased discount from 20% to 25%
 				}
+
+
+				Console.WriteLine("\nThank you for shopping with us!");
+
 
 				// Print Bill
 				Console.WriteLine();
