@@ -68,6 +68,11 @@ namespace ConsoleApplication
 					discount = totalCost * 0.25; //Increased discount from 20% to 25%
 				}
 
+				// a methof to calculate tax
+				double amountAfterDiscount = totalCost - discount;
+				double tax = CalculateTax(amountAfterDiscount);
+				double finalAmount = amountAfterDiscount + tax;
+
 
 				Console.WriteLine("\nThank you for shopping with us!");
 
